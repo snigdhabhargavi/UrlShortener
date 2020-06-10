@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login Success</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+</head>
+<body>
+<h3>
+<div class="label label-info">
+   Welcome, <span th:text="${name}">user</span>!
+   </div>
+   <br><br>
+   
+   <form action="/url" method="post" align="center">
+   	<h3>Generate Url</h3><br>
+	<input type="url" name="oldUrl"/>&nbsp
+	<input type="submit" class="btn btn-success" value="Generate"/>
+	<br><br>
+   <button id="logout" formaction="/logout">Logout</button>
+   </form> 
+   <br><br>
+   <ins th:text="${message}"></ins><br><br>
+   <span th:text="${url}"></span>
+  
+   </h3>
+</body>
+</html>
